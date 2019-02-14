@@ -1,3 +1,4 @@
+--//Scripted by vamik64
 local Workspace, Players, Lighting, ReplicatedFirst, ReplicatedStorage, ServerScriptService, ServerStorage, StarterGui, StarterPack, StarterPlayer, SoundService, Chat, LocalizationService = game:GetService("Workspace"):GetDescendants(), game:GetService("Players"):GetDescendants(), game:GetService("Lighting"):GetDescendants(), game:GetService("ReplicatedFirst"):GetDescendants(), game:GetService("ReplicatedStorage"):GetDescendants(), game:GetService("ServerScriptService"):GetDescendants(), game:GetService("ServerStorage"):GetDescendants(), game:GetService("StarterGui"):GetDescendants(), game:GetService("StarterPack"):GetDescendants(), game:GetService("StarterPlayer"):GetDescendants(), game:GetService("SoundService"):GetDescendants(), game:GetService("Chat"):GetDescendants(), game:GetService("SoundService"):GetDescendants(), game:GetService("LocalizationService"):GetDescendants()
 local all = {}
 table.insert(all, Workspace) table.insert(all, Players) table.insert(all, ReplicatedFirst) table.insert(all, ReplicatedStorage) table.insert(all, ServerScriptService) table.insert(all, Lighting) table.insert(all, ServerStorage) table.insert(all, StarterGui) table.insert(all, StarterPack) table.insert(all, StarterPlayer) table.insert(all, SoundService) table.insert(all, Chat) table.insert(all, LocalizationService)
@@ -10,7 +11,6 @@ local results = {
 }
 local t = tick()
 
---//Scripted by vamik64
 function countLines(str)
 	local counter = 1
 	for line in str:gmatch("%s") do
