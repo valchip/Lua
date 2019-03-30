@@ -1,6 +1,11 @@
 --[[
-//Programmed by vamik64
+	// FileName: MorseCodeTranslator.lua
+	// Version 1.1
+	// Written by: vamik64
+	// Description: A morse code translator
+--]]
 
+--[[
 Usage:
 
 --~~
