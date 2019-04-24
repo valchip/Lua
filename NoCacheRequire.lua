@@ -1,4 +1,4 @@
---Requires a module by its asset id without caching. Make sure you change the "moduleName" to the name of your own module!
+--Requires a module by its asset id without caching.
 
 local function NoCacheRequire(id)
 	local succ, err = pcall(function()
@@ -7,6 +7,7 @@ local function NoCacheRequire(id)
 	end)
 	if not succ then return "error" end
 	local module = asset:FindFirstChildOfClass("ModuleScript")
+	if not succ or module == nil then return "error" end
 	asset:Destroy()
 	return require(module)
 end
