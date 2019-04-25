@@ -11,8 +11,7 @@ or
 local Require = require(03111497486)
 local ARandomModule = Require(moduleIdHere)
 
-Supports modules being required by their path too, but they cache as
-I did not see any reason to make modules that are required by their path not cache.
+Supports modules being required by their path too.
 --]]
 
 local lastVersion;
