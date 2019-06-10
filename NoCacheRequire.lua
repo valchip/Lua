@@ -8,10 +8,10 @@ local ARandomModule = Require(moduleIdHere)
 
 or
 
-local Require = require(03111497486)
+local Require = require(3111497486)
 local ARandomModule = Require(moduleIdHere)
 
-Supports modules being required by their path too.
+Supports modules being required by their path (uses original require function) too which means that you could just totally ditch the require function.
 --]]
 
 local lastVersion;
